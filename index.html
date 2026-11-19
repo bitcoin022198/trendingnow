@@ -22,11 +22,9 @@ body{font-family:Inter,system-ui,sans-serif;background:#fff;color:#0a0a0a;-webki
 .masthead h1 span{background:#0a0a0a;color:#fff;padding:2px 10px;border-radius:6px;font-size:34px;vertical-align:middle;letter-spacing:0}
 .masthead h1 span.red{background:#e11d2e}
 .tagline{font-size:12px;letter-spacing:.22em;text-transform:uppercase;color:#78716c;font-weight:700}
-/* FIXED NAV - explicit margins, not just gap, to prevent jammed text */
-.nav{max-width:1280px;margin:16px auto 0;padding:12px 20px;display:flex;flex-wrap:wrap;justify-content:center;align-items:center;border-top:1px solid #e7e5e4;border-bottom:3px solid #0a0a0a;background:#fff;z-index:20}
+.nav{max-width:1280px;margin:16px auto 0;padding:12px 20px;display:flex;flex-wrap:wrap;justify-content:center;align-items:center;border-top:1px solid #e7e5e4;border-bottom:3px solid #0a0a0a;background:#fff}
 .nav a{font-size:12px;font-weight:800;letter-spacing:.12em;text-decoration:none;color:#0a0a0a;margin:0 14px;padding:4px 2px;white-space:nowrap}
-.nav a:hover{color:#e11d2e}
-.nav a.active{color:#e11d2e;border-bottom:2px solid #e11d2e}
+.nav a:hover{color:#e11d2e}.nav a.active{color:#e11d2e;border-bottom:2px solid #e11d2e}
 .breaking{max-width:1280px;margin:0 auto;display:flex;align-items:stretch;background:#fff;border-bottom:1px solid #e7e5e4}
 .breaking-label{background:#e11d2e;color:#fff;font-weight:900;font-size:12px;letter-spacing:.1em;padding:10px 14px;display:flex;align-items:center;white-space:nowrap}
 .breaking-track{flex:1;overflow:hidden;display:flex;align-items:center}
@@ -34,9 +32,9 @@ body{font-family:Inter,system-ui,sans-serif;background:#fff;color:#0a0a0a;-webki
 @keyframes scroll{from{transform:translateX(0)}to{transform:translateX(-50%)}}
 .wrap{max-width:1280px;margin:0 auto;padding:24px 20px 0}
 .hero{display:grid;grid-template-columns:1.65fr .9fr;gap:24px}
-.hero-main{position:relative;border-radius:16px;overflow:hidden;cursor:pointer;background:#0a0a0a;min-height:520px;display:flex;align-items:flex-end;box-shadow:0 20px 50px rgba(0,0,0,.18)}
-.hero-main img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.92}
-.hero-overlay{position:absolute;inset:0;background:linear-gradient(180deg,transparent 30%,rgba(0,0,0,.92) 78%)}
+.hero-main{position:relative;border-radius:16px;overflow:hidden;cursor:pointer;background:#1c1917;min-height:520px;display:flex;align-items:flex-end;box-shadow:0 20px 50px rgba(0,0,0,.18)}
+.hero-main img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.hero-overlay{position:absolute;inset:0;background:linear-gradient(180deg,transparent 25%,rgba(0,0,0,.92) 78%)}
 .hero-content{position:relative;padding:28px;z-index:2;color:#fff;width:100%}
 .pill{background:#fff;color:#000;font-size:11px;font-weight:800;padding:5px 10px;border-radius:999px}
 .pill.red{background:#e11d2e;color:#fff}
@@ -76,7 +74,7 @@ label{font-size:11px;font-weight:800;letter-spacing:.08em;display:block;margin:1
 .modal h2{font-size:22px}
 .modal .sub{font-size:13px;color:#78716c;margin-top:6px}
 .err{color:#dc2626;font-size:13px;margin-top:10px;display:none}
-@media(max-width:900px){.masthead h1{font-size:38px}.hero{grid-template-columns:1fr}.hero-main{min-height:420px}.hero-content h2{font-size:32px}.cards{grid-template-columns:1fr}.markets-bar{grid-template-columns:1fr}.tickers{grid-template-columns:1fr 1fr}.newsletter{flex-direction:column;align-items:flex-start}.nav{justify-content:flex-start;overflow-x:auto;flex-wrap:nowrap}.nav a{margin:0 10px}.top-utility-inner{flex-wrap:wrap}.market{display:none}}
+@media(max-width:900px){.masthead h1{font-size:38px}.hero{grid-template-columns:1fr}.hero-main{min-height:420px}.hero-content h2{font-size:32px}.cards{grid-template-columns:1fr}.markets-bar{grid-template-columns:1fr}.tickers{grid-template-columns:1fr 1fr}.newsletter{flex-direction:column;align-items:flex-start}.nav{justify-content:flex-start;overflow-x:auto;flex-wrap:nowrap}.nav a{margin:0 10px}.market{display:none}}
 </style>
 </head>
 <body>
@@ -86,7 +84,7 @@ label{font-size:11px;font-weight:800;letter-spacing:.08em;display:block;margin:1
 <div class="breaking"><div class="breaking-label">● BREAKING</div><div class="breaking-track"><div id="tickerText">Loading...</div></div></div>
 <div class="wrap">
 <div class="hero">
-<article class="hero-main"><img src="https://images.unsplash.com/photo-1538332576228-eb5fba7d8b2d?w=1400&q=80" alt="Shenzhen skyline at dusk"><div class="hero-overlay"></div><div class="hero-content"><div style="display:flex;gap:8px"><span class="pill">WORLD • EXCLUSIVE</span><span class="pill red">● LIVE</span></div><h2>Trump, Xi and Putin to Hold Historic Trilateral Summit in Shenzhen</h2><p>Sources confirm the three leaders will meet next month to discuss trade corridors, AI governance and Pacific security. The venue — chosen for its neutrality — signals a shift toward economic pragmatism.</p><div class="byline"><div class="avatar">TN</div><div><b>By TrendingNow Staff</b> • <span data-ago="2026-11-19T08:00:00Z"></span> • Verified • Bloomberg • Reuters</div></div></div></article>
+<article class="hero-main"><img src="https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?w=1400&q=80" alt="Modern city skyline at dusk - Shenzhen summit" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1449824913935-59a10b8d2000?w=1400&q=80'"><div class="hero-overlay"></div><div class="hero-content"><div style="display:flex;gap:8px"><span class="pill">WORLD • EXCLUSIVE</span><span class="pill red">● LIVE</span></div><h2>Trump, Xi and Putin to Hold Historic Trilateral Summit in Shenzhen</h2><p>Sources confirm the three leaders will meet next month to discuss trade corridors, AI governance and Pacific security. The venue — chosen for its neutrality — signals a shift toward economic pragmatism.</p><div class="byline"><div class="avatar">TN</div><div><b>By TrendingNow Staff</b> • <span data-ago="2026-11-19T08:00:00Z"></span> • Verified • Bloomberg • Reuters</div></div></div></article>
 <aside class="side"><div class="side-head"><h3>TOP STORIES</h3><span class="live-badge">● LIVE</span></div><div id="topStories"></div></aside>
 </div>
 <div class="grid-section"><div class="section-head"><h3>All Stories • Verified</h3><span style="font-size:12px;color:#78716c">Updated <span id="updatedAgo"></span></span></div><div class="cards" id="allStories"></div></div>
@@ -107,7 +105,7 @@ const DEFAULT_ARTICLES=[
 ];
 function timeAgo(d){const diff=Date.now()-new Date(d).getTime();const m=Math.floor(diff/60000);if(m<1)return"Just now";if(m<60)return m+"m ago";const h=Math.floor(m/60);if(h<24)return h+"h ago";return Math.floor(h/24)+"d ago"}
 function renderDates(){const now=new Date();const opts={weekday:'long',year:'numeric',month:'long',day:'numeric'};document.getElementById('topDate').textContent=now.toLocaleDateString('en-US',opts);document.getElementById('headerDate2').textContent=now.toLocaleDateString('en-US',opts);document.getElementById('year').textContent=now.getFullYear();document.getElementById('updatedAgo').textContent=timeAgo(new Date(Date.now()-1000*60*12));document.querySelectorAll('[data-ago]').forEach(el=>el.textContent=timeAgo(el.getAttribute('data-ago')));}
-function renderArticles(){let saved=[];try{saved=JSON.parse(localStorage.getItem('tn_articles')||'[]')}catch(e){saved=[]}const all=[...saved,...DEFAULT_ARTICLES];document.getElementById('topStories').innerHTML=all.slice(0,4).map((a,i)=>`<div class="story-row"><div style="display:flex;gap:10px"><span class="rank">${i+1}</span><img src="${a.img}" alt=""></div><div><h4>${a.title}</h4><span style="font-size:11px;color:#78716c">${a.cat} • ${timeAgo(a.date)}</span></div></div>`).join('');document.getElementById('allStories').innerHTML=all.map(a=>`<article class="card"><img src="${a.img}" alt=""><div class="card-body"><div class="cat">${a.cat}</div><h4>${a.title}</h4><p>${a.excerpt}</p><div style="font-size:11px;color:#78716c;margin-top:12px">${timeAgo(a.date)} • Verified</div></div></article>`).join('');document.getElementById('tickerText').textContent=all.map(a=>a.title).join('   •   ')+'   •   '+all.map(a=>a.title).join('   •   ');}
+function renderArticles(){let saved=[];try{saved=JSON.parse(localStorage.getItem('tn_articles')||'[]')}catch(e){saved=[]}const all=[...saved,...DEFAULT_ARTICLES];document.getElementById('topStories').innerHTML=all.slice(0,4).map((a,i)=>`<div class="story-row"><div style="display:flex;gap:10px"><span class="rank">${i+1}</span><img src="${a.img}" alt=""></div><div><h4>${a.title}</h4><span style="font-size:11px;color:#78716c">${a.cat} • ${timeAgo(a.date)}</span></div></div>`).join('');document.getElementById('allStories').innerHTML=all.map(a=>`<article class="card"><img src="${a.img}" alt="" onerror="this.src='https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=800&q=80'"><div class="card-body"><div class="cat">${a.cat}</div><h4>${a.title}</h4><p>${a.excerpt}</p><div style="font-size:11px;color:#78716c;margin-top:12px">${timeAgo(a.date)} • Verified</div></div></article>`).join('');document.getElementById('tickerText').textContent=all.map(a=>a.title).join('   •   ')+'   •   '+all.map(a=>a.title).join('   •   ');}
 function hash(s){return btoa(unescape(encodeURIComponent(s)))}
 function checkPassword(p){const c=localStorage.getItem('tn_custom_password_hash');if(c)return hash(p)===c;return p==="Trending2026!"}
 function openAdmin(){if(sessionStorage.getItem('tn_admin_session')==='1'){showConsole();return}document.getElementById('adminModal').classList.add('show');setTimeout(()=>document.getElementById('adminPass').focus(),100)}
