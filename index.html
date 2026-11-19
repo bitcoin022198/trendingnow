@@ -3,121 +3,102 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>TrendingNow Daily - Viral Stories Worldwide | Verified Global News</title>
-<meta name="description" content="TrendingNow Daily - Verified global news, markets, tech, world, entertainment.">
-<link rel="icon" href="data:image/svg+xml,[STRIPPED]">
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800;900&family=Inter:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet">
+<title>TrendingNow Daily</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800;900&family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
 <style>
 *{box-sizing:border-box;margin:0;padding:0}
-body{font-family:Inter,system-ui,sans-serif;background:#fff;color:#0a0a0a;-webkit-font-smoothing:antialiased}
-.top-utility{background:#0a0a0a;color:#fff;font-size:11px;letter-spacing:.08em}
-.top-utility-inner{max-width:1280px;margin:0 auto;padding:8px 20px;display:flex;justify-content:space-between;align-items:center;gap:16px}
-.live-dot{width:7px;height:7px;background:#ef4444;border-radius:50%;display:inline-block;animation:pulse 1.5s infinite}
-@keyframes pulse{0%,100%{opacity:1}50%{opacity:.3}}
-.market{display:flex;gap:16px;font-family:"IBM Plex Mono",monospace}
-.market b{color:#4ade80}.market i{color:#f87171;font-style:normal}
-.masthead{max-width:1280px;margin:0 auto;padding:20px 20px 0;text-align:center}
-.masthead-row{display:flex;justify-content:space-between;align-items:center;font-size:12px;color:#78716c;padding-bottom:14px;border-bottom:1px solid #e7e5e4}
-.masthead h1{font-family:"Playfair Display",Georgia,serif;font-size:54px;font-weight:900;letter-spacing:-2px;line-height:1;margin:14px 0 6px}
-.masthead h1 span{background:#0a0a0a;color:#fff;padding:2px 10px;border-radius:6px;font-size:34px;vertical-align:middle;letter-spacing:0}
-.masthead h1 span.red{background:#e11d2e}
-.tagline{font-size:12px;letter-spacing:.22em;text-transform:uppercase;color:#78716c;font-weight:700}
-.nav{max-width:1280px;margin:16px auto 0;padding:12px 20px;display:flex;flex-wrap:wrap;justify-content:center;align-items:center;border-top:1px solid #e7e5e4;border-bottom:3px solid #0a0a0a;background:#fff}
-.nav a{font-size:12px;font-weight:800;letter-spacing:.12em;text-decoration:none;color:#0a0a0a;margin:0 14px;padding:4px 2px;white-space:nowrap}
-.nav a:hover{color:#e11d2e}.nav a.active{color:#e11d2e;border-bottom:2px solid #e11d2e}
-.breaking{max-width:1280px;margin:0 auto;display:flex;align-items:stretch;background:#fff;border-bottom:1px solid #e7e5e4}
-.breaking-label{background:#e11d2e;color:#fff;font-weight:900;font-size:12px;letter-spacing:.1em;padding:10px 14px;display:flex;align-items:center;white-space:nowrap}
-.breaking-track{flex:1;overflow:hidden;display:flex;align-items:center}
-.breaking-track div{white-space:nowrap;animation:scroll 32s linear infinite;font-size:13px;font-weight:600}
-@keyframes scroll{from{transform:translateX(0)}to{transform:translateX(-50%)}}
-.wrap{max-width:1280px;margin:0 auto;padding:24px 20px 0}
-.hero{display:grid;grid-template-columns:1.65fr .9fr;gap:24px}
-.hero-main{position:relative;border-radius:16px;overflow:hidden;cursor:pointer;background:#1c1917;min-height:520px;display:flex;align-items:flex-end;box-shadow:0 20px 50px rgba(0,0,0,.18)}
-.hero-main img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
-.hero-overlay{position:absolute;inset:0;background:linear-gradient(180deg,transparent 25%,rgba(0,0,0,.92) 78%)}
-.hero-content{position:relative;padding:28px;z-index:2;color:#fff;width:100%}
-.pill{background:#fff;color:#000;font-size:11px;font-weight:800;padding:5px 10px;border-radius:999px}
-.pill.red{background:#e11d2e;color:#fff}
-.hero-content h2{font-family:"Playfair Display",serif;font-size:44px;line-height:.98;letter-spacing:-.8px;margin:14px 0 12px;max-width:640px}
-.hero-content p{font-size:15px;line-height:1.6;opacity:.92;max-width:580px}
-.byline{margin-top:16px;display:flex;gap:12px;align-items:center;font-size:12px;color:#e7e5e4}
-.avatar{width:32px;height:32px;border-radius:50%;background:#fff;color:#000;display:flex;align-items:center;justify-content:center;font-weight:900;font-size:12px}
-.side{border:1px solid #e7e5e4;border-radius:16px;padding:18px;background:#fff;box-shadow:0 4px 24px rgba(0,0,0,.04)}
-.side-head{display:flex;justify-content:space-between;align-items:center;margin-bottom:14px}
-.live-badge{background:#fef2f2;color:#dc2626;font-size:11px;font-weight:800;padding:4px 8px;border-radius:999px}
-.story-row{display:flex;gap:12px;padding:12px 0;border-bottom:1px solid #f5f5f4;cursor:pointer}
-.story-row img{width:96px;height:72px;object-fit:cover;border-radius:10px}
-.story-row h4{font-size:14px;line-height:1.35;font-weight:700}
-.rank{font-family:"Playfair Display",serif;font-size:28px;font-weight:900;color:#e7e5e4;line-height:1}
-.grid-section{margin-top:36px}
-.section-head{display:flex;justify-content:space-between;align-items:end;border-bottom:2px solid #0a0a0a;padding-bottom:10px;margin-bottom:18px}
-.section-head h3{font-family:"Playfair Display",serif;font-size:28px}
-.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
-.card{border:1px solid #e7e5e4;border-radius:16px;overflow:hidden;background:#fff;cursor:pointer}
-.card img{width:100%;height:180px;object-fit:cover}
-.card-body{padding:16px}
-.cat{font-size:11px;font-weight:800;letter-spacing:.12em;color:#e11d2e}
-.card h4{font-family:"Playfair Display",serif;font-size:19px;line-height:1.2;margin:8px 0 8px}
-.card p{font-size:13px;color:#57534e;line-height:1.6}
-.markets-bar{margin-top:32px;background:#0a0a0a;color:#fff;border-radius:16px;padding:18px 20px;display:grid;grid-template-columns:1.2fr 2fr;gap:20px}
-.tickers{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
-.ticker-item{background:#1c1917;border-radius:12px;padding:12px}
-.newsletter{margin-top:32px;background:#fefce8;border:1px solid #fef08a;border-radius:16px;padding:24px;display:flex;justify-content:space-between;gap:20px;align-items:center}
-.footer{margin-top:40px;border-top:1px solid #e7e5e4;padding:24px 20px 32px;text-align:center;font-size:12px;color:#a8a29e}
-.btn{background:#0a0a0a;color:#fff;border:none;padding:12px 20px;border-radius:999px;font-weight:800;font-size:13px;cursor:pointer}
-.btn-ghost{background:#fff;color:#0a0a0a;border:1px solid #ddd}
-.field{width:100%;padding:12px 14px;border:1px solid #ddd;border-radius:12px;font-size:14px}
-label{font-size:11px;font-weight:800;letter-spacing:.08em;display:block;margin:14px 0 6px}
-.modal-overlay{position:fixed;inset:0;background:rgba(0,0,0,.6);display:none;align-items:center;justify-content:center;z-index:100;padding:16px}
-.modal-overlay.show{display:flex}
-.modal{background:#fff;border-radius:20px;width:100%;max-width:440px;padding:28px}
-.modal h2{font-size:22px}
-.modal .sub{font-size:13px;color:#78716c;margin-top:6px}
-.err{color:#dc2626;font-size:13px;margin-top:10px;display:none}
-@media(max-width:900px){.masthead h1{font-size:38px}.hero{grid-template-columns:1fr}.hero-main{min-height:420px}.hero-content h2{font-size:32px}.cards{grid-template-columns:1fr}.markets-bar{grid-template-columns:1fr}.tickers{grid-template-columns:1fr 1fr}.newsletter{flex-direction:column;align-items:flex-start}.nav{justify-content:flex-start;overflow-x:auto;flex-wrap:nowrap}.nav a{margin:0 10px}.market{display:none}}
+body{font-family:Inter,sans-serif;background:#fff;color:#111;line-height:1.5}
+a{color:#111;text-decoration:none}
+.wrap{max-width:1000px;margin:0 auto;padding:0 20px}
+header{padding:22px 0 0;text-align:center}
+header .date{font-size:12px;color:#777}
+header h1{font-family:"Playfair Display",serif;font-size:46px;font-weight:900;letter-spacing:-1px;margin:8px 0 4px}
+header h1 span{background:#111;color:#fff;padding:0 8px;border-radius:4px;font-size:30px}
+header h1 span.red{background:#d92d20}
+header p{font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:#777;font-weight:700}
+nav{display:flex;justify-content:center;gap:22px;flex-wrap:wrap;border-top:1px solid #eee;border-bottom:2px solid #111;padding:10px 0;margin-top:16px;font-size:12px;font-weight:800;letter-spacing:.1em}
+nav a:hover{color:#d92d20}
+.hero{margin-top:22px;border-radius:12px;overflow:hidden;position:relative;min-height:420px;background:#222;display:flex;align-items:flex-end;cursor:pointer}
+.hero img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 30%,rgba(0,0,0,.88))}
+.hero-text{position:relative;z-index:2;padding:24px;color:#fff}
+.hero-text .tag{font-size:11px;font-weight:800;letter-spacing:.1em;background:#fff;color:#111;padding:4px 8px;border-radius:99px}
+.hero-text h2{font-family:"Playfair Display",serif;font-size:36px;line-height:1.05;margin:12px 0 8px;max-width:640px}
+.hero-text p{font-size:14px;opacity:.9;max-width:560px}
+.hero-text small{font-size:12px;opacity:.8}
+h3.section{font-family:"Playfair Display",serif;font-size:26px;margin:32px 0 14px;padding-bottom:8px;border-bottom:2px solid #111}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.card{border:1px solid #eee;border-radius:12px;overflow:hidden}
+.card img{width:100%;height:160px;object-fit:cover;display:block}
+.card-body{padding:14px}
+.card .cat{font-size:11px;font-weight:800;letter-spacing:.1em;color:#d92d20}
+.card h4{font-family:"Playfair Display",serif;font-size:17px;line-height:1.25;margin:6px 0}
+.card p{font-size:13px;color:#555}
+.card small{font-size:11px;color:#888}
+footer{text-align:center;padding:28px 0 30px;font-size:12px;color:#999;border-top:1px solid #eee;margin-top:32px}
+/* Admin */
+.btn{background:#111;color:#fff;border:none;padding:10px 18px;border-radius:99px;font-weight:800;font-size:13px;cursor:pointer}
+.btn-ghost{background:#fff;color:#111;border:1px solid #ddd}
+.field{width:100%;padding:10px 12px;border:1px solid #ddd;border-radius:10px;font-size:14px}
+label{font-size:11px;font-weight:800;letter-spacing:.08em;display:block;margin:12px 0 5px}
+.modal{position:fixed;inset:0;background:rgba(0,0,0,.55);display:none;align-items:center;justify-content:center;z-index:50;padding:16px}
+.modal.show{display:flex}
+.modal-box{background:#fff;border-radius:16px;width:100%;max-width:400px;padding:24px}
+.err{color:#d92d20;font-size:13px;margin-top:8px;display:none}
+@media(max-width:800px){header h1{font-size:34px}.hero{min-height:340px}.hero-text h2{font-size:28px}.cards{grid-template-columns:1fr}nav{gap:12px;justify-content:flex-start}}
 </style>
 </head>
 <body>
-<div class="top-utility"><div class="top-utility-inner"><div><span class="live-dot"></span> &nbsp; LIVE • VERIFIED • GLOBAL</div><div class="market"><span>S&P 500 <b>+1.24%</b></span><span>NASDAQ <b>+1.87%</b></span><span>BTC <b>$128,400</b></span><span>GOLD <i>-0.42%</i></span></div><div id="topDate"></div></div></div>
-<header class="masthead"><div class="masthead-row"><span>Thursday Edition • Vol. 12 • No. 324</span><span>Weather: Manila 29° • New York 8° • London 11°</span><span id="headerDate2"></span></div><h1>Trending<span>Now</span> <span class="red">DAILY</span></h1><div class="tagline">Verified Global News • No Noise • Just What Matters</div></header>
-<nav class="nav"><a href="#" class="active">LATEST</a><a href="#">WORLD</a><a href="#">BUSINESS</a><a href="#">POLITICS</a><a href="#">TECH</a><a href="#">ENTERTAINMENT</a><a href="#">ARTS</a><a href="#" onclick="openAdmin();return false">ADMIN</a></nav>
-<div class="breaking"><div class="breaking-label">● BREAKING</div><div class="breaking-track"><div id="tickerText">Loading...</div></div></div>
 <div class="wrap">
-<div class="hero">
-<article class="hero-main"><img src="https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?w=1400&q=80" alt="Modern city skyline at dusk - Shenzhen summit" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1449824913935-59a10b8d2000?w=1400&q=80'"><div class="hero-overlay"></div><div class="hero-content"><div style="display:flex;gap:8px"><span class="pill">WORLD • EXCLUSIVE</span><span class="pill red">● LIVE</span></div><h2>Trump, Xi and Putin to Hold Historic Trilateral Summit in Shenzhen</h2><p>Sources confirm the three leaders will meet next month to discuss trade corridors, AI governance and Pacific security. The venue — chosen for its neutrality — signals a shift toward economic pragmatism.</p><div class="byline"><div class="avatar">TN</div><div><b>By TrendingNow Staff</b> • <span data-ago="2026-11-19T08:00:00Z"></span> • Verified • Bloomberg • Reuters</div></div></div></article>
-<aside class="side"><div class="side-head"><h3>TOP STORIES</h3><span class="live-badge">● LIVE</span></div><div id="topStories"></div></aside>
+<header>
+<div class="date" id="topDate"></div>
+<h1>Trending<span>Now</span> <span class="red">DAILY</span></h1>
+<p>What matters today</p>
+<nav><a href="#">LATEST</a><a href="#">WORLD</a><a href="#">BUSINESS</a><a href="#">TECH</a><a href="#">ENTERTAINMENT</a><a href="#" onclick="openAdmin();return false">ADMIN</a></nav>
+</header>
+
+<article class="hero"><img src="https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?w=1200&q=80" alt="City skyline"><div class="hero-text"><span class="tag">WORLD</span><h2>Trump, Xi and Putin to Hold Historic Trilateral Summit in Shenzhen</h2><p>First-ever three-way meeting on the sidelines of APEC to discuss trade, security and supply chains.</p><small>Source: Reuters / AP • Nov 19, 2026</small></div></article>
+
+<h3 class="section">All Stories</h3>
+<div class="cards" id="allStories"></div>
+
+<div id="adminSection" style="display:none;margin-top:28px">
+<h3 class="section">Publish</h3>
+<div style="border:1px solid #eee;border-radius:12px;padding:18px;max-width:560px">
+<label>CATEGORY</label><select id="newCat" class="field"><option>WORLD</option><option>BUSINESS</option><option>TECH</option><option>ENTERTAINMENT</option><option>ARTS</option></select>
+<label>HEADLINE</label><input id="newTitle" class="field" placeholder="Headline">
+<label>EXCERPT</label><textarea id="newExcerpt" class="field" rows="2" placeholder="Short excerpt"></textarea>
+<label>SOURCE</label><input id="newSource" class="field" placeholder="e.g. Reuters">
+<div style="margin-top:14px;display:flex;gap:8px"><button class="btn" onclick="publishStory()">Publish</button><button class="btn btn-ghost" onclick="logout()">Logout</button></div>
 </div>
-<div class="grid-section"><div class="section-head"><h3>All Stories • Verified</h3><span style="font-size:12px;color:#78716c">Updated <span id="updatedAgo"></span></span></div><div class="cards" id="allStories"></div></div>
-<div class="markets-bar"><div><h3 style="font-family:Playfair Display,serif;font-size:22px">Markets Today</h3><p style="font-size:13px;opacity:.7;margin-top:8px;line-height:1.6">Tech leads rally as AI IPO frenzy continues. Investors watch Shenzhen summit for trade signals.</p></div><div class="tickers"><div class="ticker-item"><div style="font-size:11px;opacity:.7">S&P 500</div><b style="font-size:16px">7,842.11</b><div style="color:#4ade80">▲ +1.24%</div></div><div class="ticker-item"><div style="font-size:11px;opacity:.7">NASDAQ</div><b style="font-size:16px">25,410.22</b><div style="color:#4ade80">▲ +1.87%</div></div><div class="ticker-item"><div style="font-size:11px;opacity:.7">BITCOIN</div><b style="font-size:16px">$128,400</b><div style="color:#4ade80">▲ +3.42%</div></div><div class="ticker-item"><div style="font-size:11px;opacity:.7">GOLD</div><b style="font-size:16px">$2,814</b><div style="color:#f87171">▼ -0.42%</div></div></div></div>
-<div class="newsletter"><div><h3 style="font-family:Playfair Display,serif;font-size:24px">The Morning Briefing</h3><p style="font-size:13px;color:#57534e;margin-top:6px">Top 5 stories, every morning at 7am. No spam.</p></div><div style="display:flex;gap:10px"><input class="field" style="min-width:280px" placeholder="Enter your email"><button class="btn">Subscribe Free</button></div></div>
-<div id="adminSection" style="display:none;margin-top:32px"><div class="section-head"><h3>Newsroom Console</h3></div><div style="display:grid;grid-template-columns:1fr 1fr;gap:20px"><div style="border:1px solid #e7e5e4;border-radius:16px;padding:20px"><h4>Publish New Story</h4><label>CATEGORY</label><select id="newCat" class="field"><option>WORLD</option><option>BUSINESS</option><option>TECH</option><option>ENTERTAINMENT</option><option>ARTS</option></select><label>HEADLINE</label><input id="newTitle" class="field" placeholder="Headline"><label>SHORT EXCERPT</label><textarea id="newExcerpt" class="field" rows="2" placeholder="Short excerpt"></textarea><button class="btn" style="margin-top:14px" onclick="publishStory()">Publish Story</button><button class="btn btn-ghost" style="margin-left:8px" onclick="logout()">Logout</button></div><div style="border:1px solid #e7e5e4;border-radius:16px;padding:20px"><h4>Change Password</h4><label>CURRENT PASSWORD</label><input type="password" id="curPass" class="field" placeholder="Current password"><label>NEW PASSWORD</label><input type="password" id="newPass" class="field" placeholder="New password"><label>CONFIRM NEW PASSWORD</label><input type="password" id="confirmPass" class="field" placeholder="Confirm"><button class="btn" style="margin-top:14px" onclick="changePassword()">Update Password</button><p id="passMsg" style="font-size:13px;margin-top:10px"></p></div></div></div>
 </div>
-<footer class="footer">© <span id="year"></span> TrendingNow Daily • Verified Global News • Privacy • Terms • Contact</footer>
-<div id="adminModal" class="modal-overlay"><div class="modal"><div style="display:flex;justify-content:space-between;align-items:center"><h2>Admin Access</h2><button onclick="closeAdmin()" style="border:none;background:#f3f3f3;width:32px;height:32px;border-radius:50%;font-size:16px;cursor:pointer">×</button></div><p class="sub">Enter your password to continue</p><label>PASSWORD</label><input type="password" id="adminPass" class="field" placeholder="Password" onkeydown="if(event.key==='Enter')doLogin()"><div id="loginErr" class="err">Incorrect password</div><button class="btn" style="width:100%;margin-top:16px" onclick="doLogin()">Login</button></div></div>
+
+</div>
+<footer>© <span id="year"></span> TrendingNow Daily</footer>
+
+<div id="adminModal" class="modal"><div class="modal-box"><div style="display:flex;justify-content:space-between"><h2>Admin</h2><button onclick="closeAdmin()" style="border:none;background:#f3f3f3;width:30px;height:30px;border-radius:50%;cursor:pointer">×</button></div><label>PASSWORD</label><input type="password" id="adminPass" class="field" placeholder="Password" onkeydown="if(event.key==='Enter')doLogin()"><div id="loginErr" class="err">Incorrect password</div><button class="btn" style="width:100%;margin-top:14px" onclick="doLogin()">Login</button></div></div>
+
 <script>
-// FIXED: All 6 articles now have UNIQUE images - no duplicates
-const DEFAULT_ARTICLES=[
- {cat:"BUSINESS",title:"Anthropic Hits $100 Billion Valuation Ahead of Blockbuster IPO",excerpt:"AI lab's public debut set to be largest tech listing of the year.",img:"https://images.unsplash.com/photo-1677442136019-21780ecad995?w=800&q=80",date:"2026-11-19T06:00:00Z"},
- {cat:"ENTERTAINMENT",title:"GTA VI Launch Shatters Records With $1.2 Billion in 24 Hours",excerpt:"Rockstar's most anticipated title crashes storefronts worldwide.",img:"https://images.unsplash.com/photo-1550745165-9bc0b252726f?w=800&q=80",date:"2026-11-19T04:00:00Z"},
- {cat:"ARTS",title:"Van Gogh Painting Sells for Record $190.4 Million",excerpt:"Historic sale amid Nazi-looted art dispute draws global attention.",img:"https://images.unsplash.com/photo-1579783902614-a3fb3927b6a5?w=800&q=80",date:"2026-11-19T02:00:00Z"},
- {cat:"POLITICS",title:"House Democrats Nominate Hakeem Jeffries",excerpt:"Leadership vote signals new direction for party.",img:"https://images.unsplash.com/photo-1541872703-74c5e44368f9?w=800&q=80",date:"2026-11-19T01:00:00Z"},
- {cat:"WORLD",title:"Ukraine Strikes Kerch Bridge in Overnight Drone Assault",excerpt:"Traffic halted after central road section destroyed.",img:"https://images.unsplash.com/photo-1449034446853-66c86144b0ad?w=800&q=80",date:"2026-11-18T22:00:00Z"},
- {cat:"TECH",title:"OpenAI Unveils GPT-6 With Real-Time Reasoning",excerpt:"New model processes video, voice and code simultaneously.",img:"https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=800&q=80",date:"2026-11-19T09:00:00Z"}
+const ARTICLES=[
+ {cat:"BUSINESS",title:"Anthropic Prices IPO at $83, Valued at $1.5 Trillion",excerpt:"Largest IPO on record. 980 million shares sold.",img:"https://images.unsplash.com/photo-1677442136019-21780ecad995?w=800&q=80",source:"Reuters",date:"2026-11-19"},
+ {cat:"ENTERTAINMENT",title:"GTA VI Launches Worldwide After 13-Year Wait",excerpt:"First new title in 13 years. Available on PS5 and Xbox Series.",img:"https://images.unsplash.com/photo-1550745165-9bc0b252726f?w=800&q=80",source:"Rockstar / Take-Two",date:"2026-11-19"},
+ {cat:"ARTS",title:"Van Gogh Painting Sells for Record $190.4 Million",excerpt:"Chataigniers en Fleurs (1890) sets new record for the artist at Sotheby's.",img:"https://images.unsplash.com/photo-1579783902614-a3fb3927b6a5?w=800&q=80",source:"Reuters / Sotheby's",date:"2026-11-19"},
+ {cat:"POLITICS",title:"House Democrats Nominate Hakeem Jeffries for Speaker",excerpt:"Won 251-11 in closed-door vote. Floor vote on Jan 3.",img:"https://images.unsplash.com/photo-1541872703-74c5e44368f9?w=800&q=80",source:"AP",date:"2026-11-18"},
+ {cat:"WORLD",title:"Ukraine Strikes Kerch Bridge, Road Span Collapses",excerpt:"Road section out of service. Railway damaged but standing.",img:"https://images.unsplash.com/photo-1449034446853-66c86144b0ad?w=800&q=80",source:"Ukrainian General Staff",date:"2026-11-17"},
+ {cat:"TECH",title:"OpenAI Unveils GPT-6 With Real-Time Reasoning",excerpt:"Processes video, voice and code simultaneously.",img:"https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=800&q=80",source:"OpenAI",date:"2026-11-19"}
 ];
-function timeAgo(d){const diff=Date.now()-new Date(d).getTime();const m=Math.floor(diff/60000);if(m<1)return"Just now";if(m<60)return m+"m ago";const h=Math.floor(m/60);if(h<24)return h+"h ago";return Math.floor(h/24)+"d ago"}
-function renderDates(){const now=new Date();const opts={weekday:'long',year:'numeric',month:'long',day:'numeric'};document.getElementById('topDate').textContent=now.toLocaleDateString('en-US',opts);document.getElementById('headerDate2').textContent=now.toLocaleDateString('en-US',opts);document.getElementById('year').textContent=now.getFullYear();document.getElementById('updatedAgo').textContent=timeAgo(new Date(Date.now()-1000*60*12));document.querySelectorAll('[data-ago]').forEach(el=>el.textContent=timeAgo(el.getAttribute('data-ago')));}
-function renderArticles(){let saved=[];try{saved=JSON.parse(localStorage.getItem('tn_articles')||'[]')}catch(e){saved=[]}const all=[...saved,...DEFAULT_ARTICLES];document.getElementById('topStories').innerHTML=all.slice(0,4).map((a,i)=>`<div class="story-row"><div style="display:flex;gap:10px"><span class="rank">${i+1}</span><img src="${a.img}" alt="" onerror="this.src='https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=400&q=80'"></div><div><h4>${a.title}</h4><span style="font-size:11px;color:#78716c">${a.cat} • ${timeAgo(a.date)}</span></div></div>`).join('');document.getElementById('allStories').innerHTML=all.map(a=>`<article class="card"><img src="${a.img}" alt="" onerror="this.src='https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=800&q=80'"><div class="card-body"><div class="cat">${a.cat}</div><h4>${a.title}</h4><p>${a.excerpt}</p><div style="font-size:11px;color:#78716c;margin-top:12px">${timeAgo(a.date)} • Verified</div></div></article>`).join('');document.getElementById('tickerText').textContent=all.map(a=>a.title).join('   •   ')+'   •   '+all.map(a=>a.title).join('   •   ');}
-function hash(s){return btoa(unescape(encodeURIComponent(s)))}
-function checkPassword(p){const c=localStorage.getItem('tn_custom_password_hash');if(c)return hash(p)===c;return p==="Trending2026!"}
-function openAdmin(){if(sessionStorage.getItem('tn_admin_session')==='1'){showConsole();return}document.getElementById('adminModal').classList.add('show');setTimeout(()=>document.getElementById('adminPass').focus(),100)}
+function render(){
+ let saved=[]; try{saved=JSON.parse(localStorage.getItem('tn_articles')||'[]')}catch(e){saved=[]}
+ const all=[...saved,...ARTICLES];
+ document.getElementById('allStories').innerHTML=all.map(a=>`<article class="card"><img src="${a.img}" alt="" onerror="this.src='https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=800&q=80'"><div class="card-body"><div class="cat">${a.cat}</div><h4>${a.title}</h4><p>${a.excerpt}</p><small>Source: ${a.source||'—'} • ${a.date||''}</small></div></article>`).join('');
+}
+function openAdmin(){ if(sessionStorage.getItem('tn_admin')==='1'){document.getElementById('adminSection').style.display='block';document.getElementById('adminSection').scrollIntoView({behavior:'smooth'});return} document.getElementById('adminModal').classList.add('show'); setTimeout(()=>document.getElementById('adminPass').focus(),100)}
 function closeAdmin(){document.getElementById('adminModal').classList.remove('show')}
-function doLogin(){const p=document.getElementById('adminPass').value;if(checkPassword(p)){sessionStorage.setItem('tn_admin_session','1');closeAdmin();showConsole();document.getElementById('adminPass').value='';document.getElementById('loginErr').style.display='none'}else{document.getElementById('loginErr').style.display='block'}}
-function showConsole(){document.getElementById('adminSection').style.display='block';document.getElementById('adminSection').scrollIntoView({behavior:'smooth'})}
-function logout(){sessionStorage.removeItem('tn_admin_session');document.getElementById('adminSection').style.display='none'}
-function publishStory(){const title=document.getElementById('newTitle').value.trim();const excerpt=document.getElementById('newExcerpt').value.trim();const cat=document.getElementById('newCat').value;if(!title||!excerpt){alert('Please add headline and excerpt');return}let saved=[];try{saved=JSON.parse(localStorage.getItem('tn_articles')||'[]')}catch(e){saved=[]}saved.unshift({cat,title,excerpt,img:"https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=800&q=80",date:new Date().toISOString()});localStorage.setItem('tn_articles',JSON.stringify(saved));renderArticles();document.getElementById('newTitle').value='';document.getElementById('newExcerpt').value='';alert('Story published');}
-function changePassword(){const cur=document.getElementById('curPass').value;const nw=document.getElementById('newPass').value;const cf=document.getElementById('confirmPass').value;const msg=document.getElementById('passMsg');if(!checkPassword(cur)){msg.style.color='#dc2626';msg.textContent='Current password is incorrect';return}if(nw.length<6){msg.style.color='#dc2626';msg.textContent='New password must be at least 6 characters';return}if(nw!==cf){msg.style.color='#dc2626';msg.textContent='Passwords do not match';return}localStorage.setItem('tn_custom_password_hash',hash(nw));msg.style.color='#15803d';msg.textContent='Password updated';document.getElementById('curPass').value='';document.getElementById('newPass').value='';document.getElementById('confirmPass').value='';}
-if(new URLSearchParams(location.search).get('admin')==='true'){setTimeout(openAdmin,400)}
-renderDates();renderArticles();setInterval(()=>{renderDates();renderArticles()},60000);
+function doLogin(){ const p=document.getElementById('adminPass').value; const saved=localStorage.getItem('tn_pass'); const ok = saved ? p===saved : p==="Trending2026!"; if(ok){sessionStorage.setItem('tn_admin','1');closeAdmin();document.getElementById('adminSection').style.display='block';document.getElementById('adminSection').scrollIntoView({behavior:'smooth'});document.getElementById('loginErr').style.display='none';document.getElementById('adminPass').value=''}else{document.getElementById('loginErr').style.display='block'} }
+function logout(){sessionStorage.removeItem('tn_admin');document.getElementById('adminSection').style.display='none'}
+function publishStory(){ const t=document.getElementById('newTitle').value.trim(); const e=document.getElementById('newExcerpt').value.trim(); const c=document.getElementById('newCat').value; const src=document.getElementById('newSource').value.trim()||'—'; if(!t||!e){alert('Add headline and excerpt');return} let saved=[]; try{saved=JSON.parse(localStorage.getItem('tn_articles')||'[]')}catch(e){saved=[]} saved.unshift({cat:c,title:t,excerpt:e,img:"https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=800&q=80",source:src,date:new Date().toISOString().slice(0,10)}); localStorage.setItem('tn_articles',JSON.stringify(saved)); render(); document.getElementById('newTitle').value=''; document.getElementById('newExcerpt').value=''; document.getElementById('newSource').value=''; alert('Published'); }
+const now=new Date(); document.getElementById('topDate').textContent=now.toLocaleDateString('en-US',{weekday:'long',year:'numeric',month:'long',day:'numeric'}); document.getElementById('year').textContent=now.getFullYear();
+render();
 </script>
 </body>
 </html>
